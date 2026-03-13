@@ -410,7 +410,7 @@ async function save() {
 }
 async function load() {
   try {
-    const res = await fetch(BIN_URL + '/latest', {
+    const res = await fetch(BIN_URL, {
       headers: { 'X-Access-Key': API_KEY }
     });
     const d = await res.json();
