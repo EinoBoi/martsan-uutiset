@@ -296,7 +296,7 @@ function render() {
  const isMod = admin || isModerator(currentUser);
 const footerUser = loggedIn
     ? `<span>Kirjautunut: ${esc(currentUser)}${isMod && !admin ? ' ★' : ''} &nbsp;·&nbsp; <span id="logout-btn" style="cursor:pointer;text-decoration:underline;color:var(--red)">Kirjaudu ulos</span></span>`
-    : `<span><span id="atrig" style="cursor:default;user-select:none">toimitus@martsaweekly.fi</span> &nbsp;·&nbsp; <span id="login-link" style="cursor:pointer;text-decoration:underline;color:var(--red)">Kirjaudu / Luo tunnus</span></span>`;
+    : `<span><span id="atrig" style="cursor:default;user-select:none">toimitus@martsanuutiset.fi</span> &nbsp;·&nbsp; <span id="login-link" style="cursor:pointer;text-decoration:underline;color:var(--red)">Kirjaudu / Luo tunnus</span></span>`;
   app.className = (admin || isModerator(currentUser)) ? 'admin-on' : '';
   app.innerHTML = `
     ${confirmHtml}
